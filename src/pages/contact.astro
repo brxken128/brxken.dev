@@ -3,6 +3,7 @@ import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../config";
+import PageTitle from "../components/PageTitle.astro";
 
 const PAGE_TITLE = "Contact";
 ---
@@ -16,11 +17,16 @@ const PAGE_TITLE = "Contact";
       pageTitle={PAGE_TITLE}
     />
   </head>
-  <body>
+  <body class="bg-purplevoid text-white">
     <Header title={SITE_TITLE} />
     <main>
-      <h1>contact</h1>
+      <div class="grid items-center justify-center text-left">
+        <div class="grid-row">
+          <PageTitle title="contact" />
+          <p>you can email me at brxken128 [at] tutanota dot com</p>
+        </div>
+      </div>
+      <Footer />
     </main>
-    <Footer />
   </body>
 </html>
