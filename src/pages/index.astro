@@ -5,7 +5,7 @@ import Footer from "../components/Footer.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../config";
 import PageTitle from "../components/PageTitle.astro";
 
-const PAGE_TITLE = "Home";
+const PAGE_TITLE = "about me";
 ---
 
 <!DOCTYPE html>
@@ -22,7 +22,7 @@ const PAGE_TITLE = "Home";
     <main>
       <div class="grid items-center justify-center text-left">
         <div class="grid-row">
-          <PageTitle title="about me" />
+          <PageTitle title={PAGE_TITLE} />
           <p>
             i'm a professional rust software developer who loves cryptography
             (and embedded devices)
