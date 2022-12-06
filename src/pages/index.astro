@@ -3,20 +3,33 @@ import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../config";
+import PageTitle from "../components/PageTitle.astro";
+
+const PAGE_TITLE = "Home";
 ---
 
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+    <BaseHead
+      title={SITE_TITLE}
+      description={SITE_DESCRIPTION}
+      pageTitle={PAGE_TITLE}
+    />
   </head>
-  <body>
+  <body class="bg-purplevoid text-white">
     <Header title={SITE_TITLE} />
     <main>
-      <h1>about me</h1>
-      <p>I'm a Rust software developer who loves cryptography.</p>
-      <p>Most of my work lives on Github.</p>
+      <div class="grid items-center justify-center text-left">
+        <div class="grid-row">
+          <PageTitle title="about me" />
+          <p>
+            I'm a professional Rust software developer who loves cryptography
+            (and embedded devices).
+          </p>
+        </div>
+      </div>
+      <Footer />
     </main>
-    <Footer />
   </body>
 </html>
