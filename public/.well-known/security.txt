@@ -1,0 +1,17 @@
+Contact: mailto:security@brxken.dev
+Expires: 2025-01-01T00:00:00.000Z
+Encryption: https://brxken.dev/pgp-key.txt
+Encryption: https://dexios.dev/pgp-key.txt
+Canonical: https://brxken.dev/.well-known/security.txt
+Canonical: https://dexios.dev/.well-known/security.txt
+
+-----BEGIN PGP MESSAGE-----
+
+owGbwMvMwCW27Cm7alXLI13G0wcCkxhSDB8vcs7PK0lMLrFSyE3MzCnJtypOTS4t
+yiypdEgqqshOzdNLSS3jcq0oyCxKLbZSMDIwMtU1MASiEAMDKzDSMzAwiOJyzUsu
+qiwoyczPs1LIKCkpKLbS10cYoF+QXqCbnVqpV1JRglVpSmpFZn4xhlLnxLz8vMzk
+xByshuqVp+bk6Gbn5Zfn6cNcjUsbkgU4tXF1dLEwiHExGIkpsjhYXV4+g/VryIXP
+Fr2wMGNlAobXEhEZLCHEwMUpAFPWKMTwh+Od/gN54RORPfeVyqc7RnjMKu8/yV9T
+LlRZOW/xFZsptgz/TH0O/r535sl0xTe6fj2zJDnfrJSsjXYXn3x4y22TZS1t7AA=
+=Uv4J
+-----END PGP MESSAGE-----

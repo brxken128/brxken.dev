@@ -1,30 +1,19 @@
 ---
-// Import the global.css file here so that it is included on
-// all pages through the use of the <BaseHead /> component.
-// import "../styles/global.css";
-
-export interface Props {
-  title: string;
-  description: string;
-  pageTitle: string;
-}
-
-const { title, description, pageTitle } = Astro.props;
+import { Config } from "../config";
+const { pageTitle } = Astro.props;
 ---
 
 <!-- Global Metadata -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 <meta name="generator" content={Astro.generator} />
 
-<title>{title}</title>
-<meta name="title" content={`${title} - ${pageTitle}`} />
-<meta name="description" content={description} />
+<title>{pageTitle} - {Config.siteTitle}</title>
+<meta name="title" content={`${Config.siteTitle} - ${pageTitle}`} />
+<meta name="description" content={Config.siteDescription} />
 <meta property="og:type" content="website" />
 <meta property="og:url" content={Astro.url} />
-<meta property="og:title" content={`${title} - ${pageTitle}`} />
-<meta property="og:description" content={description} />
-<!-- <meta property="og:image" content={new URL(image, Astro.url)} /> -->
+<meta property="og:title" content={`${Config.siteTitle} - ${pageTitle}`} />
+<meta property="og:description" content={Config.siteDescription} />
 
 <meta name="theme-color" content="#E9A6A6" />

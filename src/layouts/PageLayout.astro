@@ -1,0 +1,27 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+const { title } = Astro.props;
+
+const year = new Date().getFullYear();
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <BaseHead pageTitle={title} />
+  </head>
+  <body class="bg-indigo-950 text-white">
+    <Header />
+    <main>
+      <div class="grid items-center justify-center text-left">
+        <div class="max-w-lg">
+          <slot />
+        </div>
+      </div>
+      <footer class="text-center mt-8">
+        {`© 2022-${year} brxken128. all rights reserved.`}
+      </footer>
+    </main>
+  </body>
+</html>

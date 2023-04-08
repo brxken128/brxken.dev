@@ -1,15 +1,14 @@
 ---
 import HeaderLink from "./HeaderLink.astro";
-import { SITE_TITLE } from "../config";
+import { Config } from "../config";
 ---
 
-<header class="mb-4 text-center">
-  <nav>
-    <span class="text-accent font-semibold">{SITE_TITLE} |</span>
-    <HeaderLink href="/">Home</HeaderLink>
-    <HeaderLink href="/contact">Contact</HeaderLink>
-    <HeaderLink href="https://github.com/brxken128" target="_blank"
-      >GitHub</HeaderLink
-    >
+<header class="mb-4 text-center pt-2">
+  <nav class="space-x-1">
+    <span class="text-purple-500 font-semibold">{Config.siteTitle} |</span>
+
+    <HeaderLink href="/">home</HeaderLink>
+    <HeaderLink href="/contact">contact</HeaderLink>
+    <HeaderLink href="https://github.com/brxken128">github</HeaderLink>
   </nav>
 </header>
